@@ -1,0 +1,209 @@
+.mobile-image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-image {
+    margin-left: -20px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .desktop-image {
+    display: none;
+  }
+
+  #cta1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .mobile-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .video-player {
+    width: 100%;
+    background: 0 0;
+  }
+  .video-player iframe {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: auto;
+  }
+  #frame {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: auto;
+  }
+}
+
+ /* Estilos padrão para a imagem */
+  .img-head {
+    max-width: 100%;
+  }
+
+  /* Estilos para dispositivos com largura de tela menor ou igual a 767 pixels */
+  @media (max-width: 767px) {
+    .img-head {
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+  }
+
+  /* Estilos adicionais para dispositivos com largura de tela maior que 767 pixels e largura máxima de 700 pixels */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .img-head {
+      display: block;
+      margin: 0 auto 10px auto;
+      margin-top: 15px;
+      max-width: 800px;
+    }
+  } 
+
+  /* Estilos adicionais para dispositivos com largura de tela maior que 1023 pixels */
+  @media (min-width: 1024px) {
+    .img-head {
+      display: block;
+      margin: 0 auto 10px auto;
+      margin-top: 15px;
+    }
+  }
+
+
+* {
+  font-family: helvetica, arial, sans-serif;
+}
+
+body {
+  font-size: 16px;
+  background-color: black;
+}
+
+.bbtn {
+  width: 100%;
+  max-width: 449px;
+}
+
+@media (max-width: 768px) {
+  .video-player {
+    margin-top: 0 !important;
+  }
+}
+
+.a-btn {
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  border: 0; 
+  font: open-sans; 
+  vertical-align: baseline;
+  color: #2e82bc; 
+  outline: 0; 
+  line-height: 1; 
+  text-align: center; 
+  position:relative!important; display: inline-block!important;
+  border-style: solid; 
+  width: 100%; padding-left: 0!important; padding-right: 0!important; 
+  margin-bottom: 10px; 
+  padding: 22px 44px; border-color: #0AE80D; border-width: 0px; 
+  border-radius: 20px; 
+  background:  linear-gradient(to bottom, #D30606 0%, #BA0000 100%); 
+  box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5); 
+  text-decoration: none!important;
+  width:100%;
+  max-width:449px;
+  text-align: center; /* centralizar horizontalmente */
+}
+
+    .span-btn {
+      text-decoration: none;
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      margin: 0; 
+	  margin-bottom: 10px;
+      border: 0; 
+      font: inherit;
+      vertical-align: baseline;
+      display: block; 
+      position: relative; 
+      z-index: 1; 
+      padding: 0 15px; 
+      white-space: normal; 
+      font-size: 17px;
+      color: #FFFFFF; 
+      font-family: montserrat; 
+      font-weight: bold; 
+      text-shadow: #000000 0px 1px 0px;
+      text-decoration: none;
+    }
+    .span-btn2 {
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      padding: 0; border: 0;
+      font: inherit; 
+      vertical-align: baseline; 
+      display: block; 
+      position: relative;
+      z-index: 1; 
+      margin: .2em 0 -.5em; 
+      font-size: 10px; 
+      color: #ffff00; 
+      font-family: montserrat; 
+      font-weight: bold; 
+      font-style: italic;
+      text-shadow: #000000 0px 1px 0px;
+    }
+	
+.zoom-in-out {
+      animation:zoom-in-zoom-out 1.5s ease infinite}@keyframes zoom-in-zoom-out{0%{transform:scale(1,1)}50%{transform:scale(1.07,1.07)}100%{transform:scale(1,1)}}
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.07, 1.07);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.quadro {
+      -webkit-font-smoothing: antialiased; 
+      text-align: center;
+      padding: 0; border: 0;
+      font: montserrat; 
+      vertical-align: baseline; 
+      display: block; 
+      position: relative;
+      z-index: 1; 
+      margin: .2em 0 -.5em; 
+      font-size: 9px; 
+      color: #f5e051; 
+      font-family: montserrat; 
+      font-weight: bold;
+      text-shadow: #000000 0px 1px 0px;
+      }
+
+#text-ajust-end{
+  display: none;
+}
+
+footer {
+	  padding: 60px;
+	  margin-top: -50px;
+	  margin-bottom: 25px;
+	  color: gray;
+	  font-size: 8px;
+	  text-align: center;
+}
